@@ -1,0 +1,174 @@
+/* top navbar */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(198, 212, 0);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    
+    color: rgb(255, 251, 0);
+  }
+  
+  .topnav a {
+    background-color: rgb(198, 212, 0)D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* cards */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to new lines */
+  justify-content: center; /* Centers the content horizontally */
+  overflow-x: auto; /* Enables horizontal scrolling if necessary */
+  padding-bottom: 15px; /* Adds some padding at the bottom */
+  margin-bottom: 15px; /* Counteracts the default margin */
+}
+
+.col-md-3, .col-md-4 {
+  flex: 1 1 21%; /* Takes up about 25% of the container */
+  padding: 0 15px; /* Adds spacing between cards */
+  max-width: 21%; /* Ensures it doesn't grow larger than 25% */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.card {
+  width: 100%; /* Ensures each card takes full width of column */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 500px;
+  height: auto; /* Adjust as needed */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .col-md-3, .col-md-4 {
+    flex: 1 1 46%; /* Takes up about 50% of the container */
+    max-width: 46%; /* Ensures it doesn't grow larger than 50% */
+  }
+}
+/* Container for the form */
+form[style="float:right;"] {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top:20px;
+}
+
+/* Search input field */
+form[style="float:right;"] input[type="search"] {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+}
+
+form[style="float:right;"] input[type="search"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Submit button */
+form[style="float:right;"] input[type="submit"] {
+    padding: 8px 16px;
+    background-color: rgb(223 220 38);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form[style="float:right;"] input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.add {
+  color: white;
+  background-color:rgb(198, 212, 0);
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}

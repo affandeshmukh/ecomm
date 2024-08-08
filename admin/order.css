@@ -1,0 +1,53 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.order-info p strong {
+    color: #000;
+}
+
+.order-image {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.order-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
